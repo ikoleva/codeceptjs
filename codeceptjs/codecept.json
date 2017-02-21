@@ -1,0 +1,51 @@
+{
+  "tests": "./*_test.js",
+  "timeout": 10000,
+  "output": "./output",
+  "helpers": {
+    "WebDriverIO": {
+      "url": "https://10.134.56.66",
+      "browser": "chrome",
+      "restart": false
+    },
+    "GoBack": {
+      "require": "./goback_helper.js"
+    },
+    "WaitForVisible": {
+      "require": "./waitforvisible_helper.js"
+    },
+    "ResizeWindow": {
+      "require": "./resizewindow_helper.js"
+    }
+  },
+  "include": {
+    "I": "./steps_file.js",
+    "newBlogPost": "./pages/newBlogPost.js",
+    "manager_login": "./pages/manager_login.js",
+    "manager_menus": "./pages/manager_menus.js",
+    "manager_clientRegistryMenu": "./pages/manager_clientRegistryMenu.js",
+    "manager_settingsMenu": "./pages/manager_settingsMenu.js",
+    "manager_apiRegistrationMenu": "./pages/manager_apiRegistrationMenu.js",
+    "administrator_login": "./pages/administrator_login.js",
+    "administrator_myProfile": "./pages/administrator_myProfile.js",
+    "administrator_menus": "./pages/administrator_menus.js",
+    "administrator_componentsMenu": "./pages/administrator_componentsMenu.js",
+    "portal_apisMenu": "./pages/portal_apisMenu.js",
+    "portal_applicationsMenu": "./pages/portal_applicationsMenu.js",
+    "portal_blogMenu": "./pages/portal_blogMenu.js",
+    "portal_documentationMenu": "./pages/portal_documentationMenu.js",
+    "portal_helpCenterMenu": "./pages/portal_helpCenterMenu.js",
+    "portal_login": "./pages/portal_login.js",
+    "portal_menus": "./pages/portal_menus.js",
+    "portal_monitoringMenu": "./pages/portal_monitoringMenu.js",
+    "portal_pricingMenu": "./pages/portal_pricingMenu.js",
+    "portal_profileMenu": "./pages/portal_profileMenu.js",
+    "portal_usersMenu": "./pages/portal_usersMenu.js",
+    "manager_clientRegistryMenu_Applications": "./pages/manager_clientRegistryMenu_Applications.js",
+    "manager_apiRegistrationMenu_Apis": "./pages/manager_apiRegistrationMenu_Apis.js",
+    "portal_apisMenu_apiPreview": "./pages/portal_apisMenu_apiPreview.js"
+  },
+  "bootstrap": false,
+  "mocha": {},
+  "name": "axway-api-portal"
+}
